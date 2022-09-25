@@ -1,0 +1,35 @@
+.card {
+  border: 2px solid rgba(128, 128, 128, 0.562);
+  border-radius: 15px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {
+  background-color: rgb(240, 9, 70);
+  color: white;
+  block-size: 40px;
+  width: 35px;
+  border-radius: 5px;
+  border: none;
+  align-self: end;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.grade {
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.icon {
+  margin-bottom: 18px;
+}
+h5 {
+  font-size: 30px;
+}

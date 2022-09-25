@@ -1,0 +1,22 @@
+.container {
+  block-size: 60px;
+  background-color: rgb(92, 92, 92);
+  display: flex;
+  align-items: center;
+}
+.inp {
+  block-size: 50px;
+  width: 300px;
+  margin-left: 10px;
+}
+.btn {
+  background: none;
+  color: darkgreen;
+  border: 2px solid darkgreen;
+  block-size: 50px;
+  width: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 25px;
+  font-family: cursive;
+}
