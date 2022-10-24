@@ -17,7 +17,7 @@ export class UserPosts extends React.Component {
       <div className="details">
         <h4 className="title">Posts del usuario {userid}</h4>
         <button onClick={() => console.log(this.props.posts)}>props</button>
-        {this.props.posts && this.props.posts.map(p => (
+        {this.props.userPosts && this.props.userPosts.map(p => (
           <div key={p.id}>
             <h2>{p.id} .- {p.title}</h2>
             <p>{p.body}</p>
@@ -28,17 +28,17 @@ export class UserPosts extends React.Component {
   }
 }
 
-const mapStateToprops = (state) => {
+export const mapStateToProps = (state) => {
   return {
-    posts: state.userPosts
+    userPosts: state.userPosts
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = (dispatch) => {
   return {
     getAllUserPosts: id => dispatch(getAllUserPosts(id))
   }
 }
 
 
-export default connect(mapStateToprops, mapDispatchToProps)(UserPosts);
+export default connect(mapStateToProps, mapDispatchToProps)(UserPosts);

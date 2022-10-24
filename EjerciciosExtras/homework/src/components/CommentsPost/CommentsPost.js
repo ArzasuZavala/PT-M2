@@ -18,6 +18,8 @@ export class CommentsPost extends React.Component {
       .catch(err => console.error(err))
   }
 
+
+
   render() {
     const idPost = this.props.id
     return (

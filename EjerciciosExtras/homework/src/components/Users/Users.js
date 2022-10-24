@@ -43,13 +43,13 @@ export class Users extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+export const mapStateToProps = (state) => {
   return {
     users: state.users
   }
 };
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     getAllUsers: () => dispatch(getAllUsers())
   }
